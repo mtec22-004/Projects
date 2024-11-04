@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">SmartFin</string>
+    <string name="total_expenses_format"> P%1$.2f</string>
+</resources>

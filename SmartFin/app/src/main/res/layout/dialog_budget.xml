@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <!-- EditText for Weekly Budget -->
+    <EditText
+        android:id="@+id/edit_text_weekly_budget"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Weekly Budget"
+        android:inputType="numberDecimal" />
+
+    <!-- EditText for Monthly Budget -->
+    <EditText
+        android:id="@+id/edit_text_monthly_budget"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit_text_weekly_budget"
+        android:layout_marginTop="16dp"
+        android:hint="Enter Monthly Budget"
+        android:inputType="numberDecimal" />
+
+    <!-- Button to Save Budget -->
+
+
+</RelativeLayout>

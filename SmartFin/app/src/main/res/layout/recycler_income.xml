@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/view2"
+
+        android:layout_marginTop="15dp"
+        android:layout_width="350dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="25dp"
+        app:cardCornerRadius="20dp"
+        android:elevation="20dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/Allowance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Allowance"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="15dp"/>
+            <TextView
+                android:id="@+id/income_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Allowance"
+                android:text="P1 919,00"
+                android:layout_marginTop="1dp"
+                android:layout_marginStart="15dp"
+
+                />
+            <ImageView
+                android:id="@+id/income_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/edit"
+                android:layout_toEndOf="@id/income_money"
+                android:layout_marginStart="200dp"
+                android:layout_marginTop="25dp"/>
+            <ImageView
+                android:id="@+id/income_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/baseline_delete_24"
+                android:layout_toEndOf="@+id/income_edit"
+                android:layout_marginTop="25dp"
+                android:layout_marginStart="10dp"/>
+
+
+
+
+
+        </RelativeLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+

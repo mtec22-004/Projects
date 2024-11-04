@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+  >
+
+    <!-- Add a CardView to give a container look to the RecyclerView -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="16dp"
+        android:elevation="4dp">
+
+        <!-- RecyclerView for displaying missed calls -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewMissedCalls"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="16dp"
+            android:clipToPadding="false"
+            android:clipChildren="false"
+             />
+
+    </androidx.cardview.widget.CardView>
+
+    <!-- TextView to display a message when there are no missed calls -->
+    <TextView
+        android:id="@+id/textViewEmpty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="No missed calls"
+        android:visibility="gone"
+        android:textSize="18sp"
+        android:textColor="@android:color/darker_gray" />
+
+</RelativeLayout>
+
+
+

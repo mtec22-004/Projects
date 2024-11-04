@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/editTextEmailAddress"
+        android:layout_width="372dp"
+        android:layout_height="64dp"
+        android:hint="Recipient's Email Address"
+        android:layout_below="@+id/imageView4"
+        android:layout_marginTop="40dp"
+        />
+
+    <EditText
+        android:id="@+id/editTextSubject"
+        android:layout_width="377dp"
+        android:layout_height="63dp"
+        android:layout_below="@id/editTextEmailAddress"
+        android:layout_marginTop="16dp"
+        android:hint="Email Subject"
+        />
+
+    <EditText
+        android:id="@+id/editTextMessage"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_below="@id/editTextSubject"
+        android:layout_marginTop="16dp"
+        android:hint="Type your message here"
+        />
+
+    <Button
+        android:id="@+id/buttonSendEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextMessage"
+        android:layout_marginTop="16dp"
+        android:onClick="sendEmail"
+        android:text="Send Email"
+        android:backgroundTint="?attr/buttonTint"
+        android:textColor="@color/white"
+        />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+
+
+
+        app:srcCompat="@drawable/ic_launcher_foreground" />
+
+</RelativeLayout>

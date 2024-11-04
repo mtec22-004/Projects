@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    android:id="@+id/view4"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_below="@+id/exp"
+    android:layout_marginTop="15dp"
+    android:layout_width="350dp"
+    android:layout_height="70dp"
+    android:layout_marginStart="25dp"
+    app:cardCornerRadius="20dp"
+    android:elevation="20dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/School"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tuition"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="15dp"/>
+        <TextView
+            android:id="@+id/bling"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/School"
+            android:text="P500,00"
+            android:layout_marginTop="1dp"
+            android:layout_marginStart="15dp"/>
+        <ImageView
+            android:id="@+id/expense_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/edit"
+            android:layout_toEndOf="@id/bling"
+            android:layout_marginStart="200dp"
+            android:layout_marginTop="25dp"/>
+        <ImageView
+            android:id="@+id/expense_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_delete_24"
+            android:layout_toEndOf="@+id/expense_edit"
+            android:layout_marginTop="25dp"
+            android:layout_marginStart="10dp"/>
+
+
+
+    </RelativeLayout>
+
+
+
+</androidx.cardview.widget.CardView>

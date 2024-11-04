@@ -1,0 +1,16 @@
+<resources>
+
+    <style name="Theme.PAMA" parent="Theme.AppCompat.NoActionBar">
+
+        <item name="buttonTint">@color/buttonTintDark</item>
+        <item name="textFillColor">@color/textColorDark</item>
+
+    </style>
+
+    <style name="TextAppearance">
+        <item name="android:textColorPrimary">@color/white</item>
+        <item name="android:textColorSecondary">@color/black</item>
+    </style>
+
+</resources>
+

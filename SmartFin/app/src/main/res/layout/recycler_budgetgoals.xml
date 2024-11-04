@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/goals_card"
+        android:layout_width="350dp"
+
+        android:layout_marginStart="25dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="4dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+
+            <com.google.android.material.progressindicator.LinearProgressIndicator
+                android:id="@+id/new_car_progress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:progress="25"
+                app:trackThickness="8dp" />
+
+            <TextView
+                android:id="@+id/new_car_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/new_car_progress"
+                android:text="Tuition"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/new_car_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/new_car_title"
+                android:text="P500 / P1000"
+                android:textSize="14sp" />
+            <ImageView
+                android:layout_below="@id/new_car_progress"
+                android:id="@+id/goals_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/edit"
+                android:layout_toEndOf="@id/new_car_amount"
+                android:layout_marginStart="120dp"
+                android:layout_marginTop="20dp"/>
+            <ImageView
+                android:layout_below="@id/new_car_progress"
+                android:id="@+id/goals_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/baseline_delete_24"
+                android:layout_toEndOf="@+id/goals_edit"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="10dp"/>
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+

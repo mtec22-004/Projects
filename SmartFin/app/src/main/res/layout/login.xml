@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+>
+
+    <!-- App Logo -->
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:id="@+id/imageView_logo"
+        android:layout_marginTop="100dp"/>
+
+    <!-- Username Input -->
+    <EditText
+        android:id="@+id/editText_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView_logo"
+
+        android:hint="Username"
+        android:padding="12dp"
+        />
+
+    <!-- Password Input -->
+    <EditText
+        android:id="@+id/editText_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editText_username"
+        android:layout_marginTop="16dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:padding="12dp"
+
+       />
+
+    <!-- Login Button -->
+    <Button
+        android:id="@+id/b_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editText_password"
+        android:layout_marginTop="24dp"
+        android:text="Login"
+
+        android:textColor="@android:color/white"
+        android:padding="12dp"
+        android:textAllCaps="false"/>
+
+    <!-- Register TextView -->
+    <TextView
+        android:id="@+id/textView_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/b_login"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Don't have an account? "
+       />
+
+    <TextView
+        android:id="@+id/textView_register_link"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:layout_toEndOf="@id/textView_register"
+        android:layout_below="@id/b_login"
+        android:layout_marginTop="16dp"
+
+        android:textStyle="bold"/>
+</RelativeLayout>

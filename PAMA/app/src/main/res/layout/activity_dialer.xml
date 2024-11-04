@@ -1,0 +1,37 @@
+<!-- activity_dialer.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/editTextPhoneNumber"
+        android:layout_width="378dp"
+        android:layout_height="62dp"
+        android:hint="Enter phone number"
+        android:inputType="phone"
+        android:layout_below="@id/imageView2"/>
+
+    <Button
+        android:id="@+id/buttonDial"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextPhoneNumber"
+        android:layout_marginTop="16dp"
+        android:text="Dial Number"
+        android:backgroundTint="?attr/buttonTint"
+        android:onClick="dialNumber"
+        android:textColor="@color/white"/>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="119dp"
+        android:layout_marginTop="41dp"
+        app:srcCompat="@drawable/ic_launcher_foreground" />
+</RelativeLayout>
+

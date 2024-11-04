@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="?android:attr/colorBackground">
+
+    <!-- Back button and Edit Profile button -->
+    <ImageView
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_arrow_back_ios_24"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/editProfileButton"
+        android:layout_width="336dp"
+        android:layout_height="65dp"
+        android:layout_below="@+id/phoneNumberTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="2dp"
+        android:text="Edit Profile"
+        android:textColor="@color/white"
+        android:backgroundTint="?attr/buttonTint"
+       />
+
+    <!-- Profile Title -->
+    <TextView
+        android:id="@+id/textview1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="My Profile"
+        android:layout_centerHorizontal="true"
+        android:textSize="24sp"
+        android:textColor="?attr/textFillColor"
+        android:textStyle="bold"
+        android:layout_below="@id/backButton"
+        android:layout_marginTop="16dp" />
+
+    <!-- Profile Image -->
+    <ImageView
+        android:id="@+id/profileImage"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@+id/textview1"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/baseline_person_add_24"
+        android:layout_marginTop="16dp" />
+
+    <!-- User Name -->
+    <TextView
+        android:id="@+id/nameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profileImage"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <!-- Phone Number -->
+    <TextView
+        android:id="@+id/phoneNumberTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nameTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+
+        android:textSize="16sp" />
+
+    <Switch
+        android:id="@+id/switch2"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_below="@+id/editProfileButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="Enable Dark mode"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+
+</RelativeLayout>
+
+
+

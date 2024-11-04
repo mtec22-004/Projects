@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:ignore="ExtraText"
+    >
+
+    <!-- App Logo -->
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="143dp"
+        android:layout_height="124dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="41dp"
+        android:src="@drawable/ic_launcher_foreground"
+        android:contentDescription="App Logo"
+        />
+
+    <!-- Title Text -->
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/imageView3"
+        android:layout_marginTop="32dp"
+        android:text="Welcome to PAMA"
+        android:textSize="24sp"
+        android:textStyle="bold"
+
+
+        />
+
+
+    <EditText
+        android:id="@+id/usernameEditText"
+        android:layout_width="395dp"
+        android:layout_height="65dp"
+        android:layout_below="@+id/titleTextView"
+        android:elevation="10dp"
+        android:layout_marginTop="24dp"
+        android:hint="Username"
+        android:inputType="text"
+        android:imeOptions="actionDone"
+        android:paddingLeft="15dp"
+
+        android:background="@drawable/bg_background"
+        />
+
+
+    <EditText
+        android:id="@+id/phoneNumberTextView"
+        android:layout_width="395dp"
+        android:layout_height="65dp"
+        android:layout_below="@+id/usernameEditText"
+        android:layout_marginTop="16dp"
+        android:hint="number"
+        android:inputType="text"
+        android:elevation="10dp"
+        android:background="@drawable/bg_background"
+        android:paddingLeft="15dp"
+
+
+         />
+
+    <EditText
+        android:id="@+id/passwordEditText"
+        style="@style/TextAppearance"
+        android:layout_width="394dp"
+        android:layout_height="65dp"
+        android:layout_below="@+id/phoneNumberTextView"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/bg_background"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:elevation="10dp"
+        />
+
+
+    <!-- Register Button -->
+    <Button
+        android:id="@+id/LoginButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/passwordEditText"
+        android:layout_marginTop="22dp"
+        android:background="@color/background_color"
+        android:backgroundTint="?attr/buttonTint"
+        android:text="Register"
+        android:textColor="@color/white"
+
+        />
+
+    <TextView
+        android:id="@+id/account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Already have an account?"
+        android:layout_below="@id/LoginButton"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+
+
+
+       />
+
+    <TextView
+        android:id="@+id/loginTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/LoginButton"
+        android:layout_marginLeft="2dp"
+        android:layout_toRightOf="@id/account"
+        android:text="Login"
+        android:textColor="?attr/textFillColor"
+
+        />
+
+
+</RelativeLayout>

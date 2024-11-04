@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    >
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_dashboard"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:elevation="4dp"
+        android:contentInsetStart="0dp"
+        android:contentInsetLeft="0dp"
+        android:contentInsetEnd="0dp"
+        android:contentInsetRight="0dp"
+        >
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dashboard"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"/>
+
+        <!-- Three Dot Menu Icon -->
+        <ImageView
+            android:id="@+id/toolbar_menu_icon"
+            android:layout_width="45dp"
+            android:layout_height="25dp"
+            android:src="@drawable/dots_vertical_svgrepo_com"
+            android:layout_gravity="end"
+            android:layout_marginEnd="20dp"
+            />
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+
+    <!-- User Greeting and Total Balance -->
+    <androidx.cardview.widget.CardView
+        android:layout_below="@+id/toolbar_dashboard"
+        android:id="@+id/cardViewUserGreeting"
+        android:layout_width="360dp"
+        android:layout_height="150dp"
+        android:layout_marginBottom="16dp"
+        app:cardElevation="20dp"
+        app:cardCornerRadius="20dp"
+        android:layout_centerHorizontal="true"
+
+        android:padding="16dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/hello"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hello,"
+                android:layout_marginTop="15dp"/>
+            <TextView
+                android:id="@+id/user"
+                android:layout_toEndOf="@+id/hello"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text= " User"
+                android:layout_marginTop="15dp"
+                />
+
+            <ImageView
+                android:id="@+id/image_user"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="200dp"
+                android:layout_marginTop="15dp"
+                android:layout_toEndOf="@+id/user" />
+            <TextView
+                android:id="@+id/Balance"
+                android:layout_below="@+id/user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="My Balance: "
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="75dp"/>
+            <TextView
+                android:id="@+id/money1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/Balance"
+                android:text="P700,45"
+                android:layout_below="@+id/user"
+                android:layout_marginTop="20dp"/>
+
+            <Button
+                android:id="@+id/Details"
+                android:layout_width="wrap_content"
+                android:layout_height="37dp"
+                android:layout_below="@+id/Balance"
+                android:layout_marginTop="10dp"
+                android:text="See Details"
+                android:textSize="11sp"
+                android:layout_marginStart="200dp"/>
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+    <TextView
+        android:id="@+id/Transactions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Transactions"
+        android:layout_marginStart="20dp"
+        android:layout_below="@+id/cardViewUserGreeting"/>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview2"
+        android:layout_below="@id/Transactions"
+        android:layout_width="360dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+
+        app:cardElevation="15dp"
+        android:layout_marginTop="15dp"
+        app:cardCornerRadius="50dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/Income"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Income"
+                android:layout_margin="15dp"/>
+            <TextView
+                android:id="@+id/money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="P1 000,00"
+                android:layout_toEndOf="@+id/Income"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="58dp"/>
+            <Button
+                android:id="@+id/Details1"
+                android:layout_width="wrap_content"
+                android:layout_height="37dp"
+                android:layout_toEndOf="@+id/money"
+                android:layout_marginStart="30dp"
+                android:text="see Details"
+                android:textSize="11sp"
+                android:layout_marginTop="10dp"/>
+
+
+        </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:layout_centerHorizontal="true"
+        android:id="@+id/cardview4"
+        android:layout_below="@id/cardview2"
+        android:layout_width="360dp"
+        android:layout_height="50dp"
+        app:cardElevation="15dp"
+        android:layout_marginTop="15dp"
+        app:cardCornerRadius="50dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/Expenses"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:text="Expense" />
+            <TextView
+                android:id="@+id/money3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="P1 000,00"
+                android:layout_toEndOf="@+id/Expenses"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="50dp"/>
+            <Button
+                android:id="@+id/Details2"
+                android:layout_width="wrap_content"
+                android:layout_height="37dp"
+                android:layout_toEndOf="@+id/money3"
+                android:layout_marginStart="30dp"
+                android:text="see Details"
+                android:textSize="11sp"
+                android:layout_marginTop="10dp"/>
+
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/t_goals"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Goals"
+        android:layout_below="@id/cardview4"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"/>
+    <androidx.cardview.widget.CardView
+        android:layout_centerHorizontal="true"
+        android:id="@+id/cardview6"
+        android:layout_below="@id/t_goals"
+        android:layout_width="360dp"
+        android:layout_height="50dp"
+        app:cardElevation="15dp"
+        android:layout_marginTop="15dp"
+        app:cardCornerRadius="50dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/B_goals"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Budget Goals"
+                android:layout_margin="15dp"/>
+
+            <Button
+                android:id="@+id/Details6"
+                android:layout_width="wrap_content"
+                android:layout_height="37dp"
+                android:layout_toEndOf="@+id/B_goals"
+                android:layout_marginStart="110dp"
+                android:text="see Details"
+                android:textSize="11sp"
+                android:layout_marginTop="10dp"/>
+
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

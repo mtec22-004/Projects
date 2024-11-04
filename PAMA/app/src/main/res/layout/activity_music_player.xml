@@ -1,0 +1,55 @@
+<!-- activity_play_music.xml -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+    <TextView
+        android:id="@+id/textview1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Music Player"
+        android:layout_centerHorizontal="true"
+        android:textSize="24sp"
+        android:textColor="?attr/textFillColor"
+        android:textStyle="bold"
+
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:layout_below="@id/textview1"
+        android:layout_marginTop="40dp"
+        android:id="@+id/buttonPlay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Play"
+        android:onClick="playMusic"
+        android:backgroundTint="?attr/buttonTint"
+        android:textColor="@color/white"/>
+
+    <Button
+        android:id="@+id/buttonPause"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonPlay"
+        android:layout_marginTop="8dp"
+        android:layout_centerHorizontal="true"
+        android:text="Pause"
+        android:onClick="pauseMusic"
+        android:backgroundTint="?attr/buttonTint"
+        android:textColor="@color/white"/>
+
+    <Button
+        android:id="@+id/buttonStop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonPause"
+        android:layout_marginTop="8dp"
+        android:layout_centerHorizontal="true"
+        android:text="Stop"
+        android:onClick="stopMusic"
+        android:backgroundTint="?attr/buttonTint"
+        android:textColor="@color/white"/>
+
+</RelativeLayout>
